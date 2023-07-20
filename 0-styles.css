@@ -1,0 +1,182 @@
+
+
+/*body section*/
+body {
+    margin: 0px;
+    margin-top: 0px;
+}
+/*header and main background*/
+.backgroud{
+    background-image: url(images/headphones_hero_1.jpg);
+    background-size: cover;
+}
+
+/*header section*/
+header {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.header-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.header-section .container {
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+}
+
+.container .menu{
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+}
+
+#logo_headphones{
+    display: flex;
+    align-items: center;
+}
+
+.link{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.link1{
+    font-size: 12px;
+    font: source-sans-pro bold;
+    margin: 20px;
+    padding: 7px;
+    text-decoration: none;
+}
+.link2{
+    font-size: 12px;
+    font: source-sans-pro bold;
+    margin: 20px;
+    padding: 7px;
+    text-decoration: none;
+}
+
+.link3{
+    font-size: 12px;
+    font: source-sans-pro bold;
+    margin: 20px;
+    padding: 7px;
+    text-decoration: none;
+}
+
+menu a:link {
+    color: #FFFFFF;
+}
+menu a:visited{
+    color: #FFFFFF;
+}
+menu a:hover{
+    color: red;
+}
+menu a:active{
+    color: red;
+}
+
+/*main section*/
+
+.main-section .main .main-part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15%;
+}
+
+.sub1{
+    margin: auto;
+    font-size:  32px;
+    font: source-sans-pro bold;
+    color: #FFFFFF;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.sub2{
+    font-size:  16px;
+    font: source-sans-pro bold;
+    color: #FFFFFF;
+    text-align: center;
+}
+.sub3{
+    font-size:  16px;
+    font: source-sans-pro;
+    font-style: regular;
+    color: #FFFFFF;
+    padding-top: 50px;
+    padding-bottom: 130px;
+    text-align: center;
+}
+
+.button-section{
+    padding-top: 20px;
+}
+
+.button{
+    width: 162px;
+    height: 44px;
+    color: #FFFFFF;
+    background-color: #FF6565;
+    text-decoration: none;
+    border-radius: 24px;
+    text-align: center;
+    border: solid 3px transparent;
+    font-size:  14px;
+    font: source-sans-pro bold;
+    text-transform: uppercase;
+}
+button:hover{
+    opacity: 0.9
+}
+
+button:active{
+    opacity: 0.9
+}
+
+@media only screen and (max-width: 800px){
+    header{
+        margin-left: 83.5px;
+        margin-right: 83.5px;
+    } 
+}
+@media screen and (max-width: 800px){
+    header{
+        display: flex;
+        justify-content: start;
+    }
+    .header-section{
+        flex-direction: row-reverse;
+    }
+    .link{
+        display: block;
+    }
+    .icon-1, .icon-2, .icon-3 {
+        position: absolute;
+        left: 25%;
+        top: 50%;
+        width: 32px;
+        height: 3px;
+        background-color: #FFFFFF;
+        transition: all 400ms cubic-bezier(.84,.06,.52,1.8);
+    }
+    .hamburger-icon {
+        position: absolute;
+        height: 2px;
+        width: 50px;
+        top: 10%;
+        left: 3%;
+        z-index: 1000;
+        cursor: pointer;
+        border-radius: 1px;
+        transition: all 0.2s ease-in-out;
+        background: #FFFFFF;
+    }
+}
